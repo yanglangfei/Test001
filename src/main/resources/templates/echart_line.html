@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh_CN" xmlns:th="http://www.thymeleaf.org"
+	xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<meta charset="utf-8">
+<head>
+<meta charset="UTF-8">
+<title>工作台-首页</title>
+
+</head>
+<head th:include="include :: header"></head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="portlet box  portlet-grey">
+					 <div class="portlet-header">
+						<div class="caption">统计报表</div>
+						<div class="tools">
+	                        <i class="fa fa-chevron-up"></i>
+	                        <i class="fa fa-refresh"></i><i class="fa fa-times"></i>
+	                     </div>
+					</div>	
+					<div class="portlet-body">
+                        <div class="echarts" id="echarts-line-chart" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative; background: transparent;"></div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+         </div> 
+    </div>
+    <div th:include="include :: footer"></div>
+	<!-- 全局js -->
+	<script src="js/jquery.min.js"></script>
+	<script  src="js/echart/echarts.min.js"></script>
+	<script  src="js/echart/line.js"></script>
+	<script  src="js/bootstrap.min.js"></script>
+</body>
+</html>
